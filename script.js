@@ -11,4 +11,19 @@ document.addEventListener("DOMContentLoaded", () => {
       icon.classList.add("active");
     });
   });
+
+  const profileClick = document.querySelector(".profile");
+  const profileImage = document.querySelector(".home img");
+  profileClick.addEventListener("click", () => {
+    profileImage.classList.toggle("expanded");
+    
+  });
+  document.addEventListener("click", (e) => {
+    if (!profileClick.contains(e.target) && !profileImage.contains(e.target)) {
+      profileImage.classList.remove("expanded");
+    }
+  });
+  profileImage.addEventListener("click", () => {
+    profileImage.classList.toggle("expanded");
+  });
 });
