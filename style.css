@@ -1,10 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 body {
   margin: 0;
   padding: 0;
   background-color: #0f0f0f;
   color: #ffffff;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   display: flex;
+}
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .main {
@@ -119,4 +130,45 @@ html {
   height: 42px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.home {
+  display: flex;
+  gap: 32px;
+}
+.home img[alt="profile"] {
+  border: none;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.home section h1 {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 32px;
+  box-sizing: border-box;
+}
+
+.home section p {
+  margin: 5px 0;
+  margin-bottom: 10px;
+}
+.smedia {
+  display: flex;
+  gap: 16px;
+}
+
+.smedia a {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid #4e4e4e;
+  border-radius: 5px;
+}
+
+.smedia img {
+  filter: brightness(0) invert(1);
+  width: 16px;
+  height: 16px;
+  display: block;
 }
