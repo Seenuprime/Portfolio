@@ -141,6 +141,7 @@ html {
   border: none;
   border-radius: 8px;
   object-fit: cover;
+  cursor: pointer;
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 .home img[alt="profile"].expanded {
