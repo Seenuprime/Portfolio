@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0f0f0f;
-  color: #ffffff;
+  color: #d5d4d4;
   font-family: "Inter", sans-serif;
   display: flex;
 }
@@ -80,6 +80,7 @@ html {
   margin: 50px;
   border: 1px solid #333;
   border-radius: 20px;
+  max-width: calc(100% - 650px);
 }
 .hero .container div {
   padding: 40px;
