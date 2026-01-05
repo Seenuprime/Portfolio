@@ -76,15 +76,23 @@ html {
   flex-grow: 1;
 }
 .hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
   padding: 10px 60px;
   margin: 50px;
   border: 1px solid #333;
   border-radius: 20px;
   max-width: calc(100% - 650px);
 }
-.hero .container div {
-  padding: 40px;
+.home,
+.about,
+.skills,
+.projects,
+.contact {
+  scroll-margin-top: clamp(80px, 40vh, 160px);
 }
+
 .active {
   background-color: rgba(34, 34, 34, 0.1);
   filter: brightness(0) invert(1);
@@ -181,6 +189,7 @@ html {
   margin: 5px 0;
   margin-bottom: 10px;
 }
+
 .smedia {
   display: flex;
   gap: 16px;
@@ -200,4 +209,27 @@ html {
   width: 16px;
   height: 16px;
   display: block;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+}
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  min-height: 30px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.skill img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
 }
