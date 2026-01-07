@@ -78,7 +78,7 @@ html {
 .hero .container {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 55px;
   padding: 10px 60px;
   margin: 50px;
   border: 1px solid #333;
@@ -91,6 +91,12 @@ html {
 .projects,
 .contact {
   scroll-margin-top: clamp(80px, 40vh, 160px);
+}
+.home,
+.about p:last-child,
+.skills-container,
+.projects ul {
+  margin-bottom: 20px;
 }
 
 .active {
@@ -223,13 +229,13 @@ html {
   gap: 10px;
   padding: 6px 10px;
   min-height: 30px;
-  border: 1px solid #333;
+  border: 1px solid #4e4e4e;
   border-radius: 5px;
   font-size: 13px;
   font-weight: 600;
 }
 .skill img {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   filter: brightness(0) invert(1);
 }
